@@ -384,9 +384,7 @@ export default function Home() {
                 <p className="text-base md:text-lg font-medium text-primary mb-3 md:mb-4">Desenvolvedor Full Stack & Instrutor</p>
                 
                 <p className="mb-4">
-                  Com mais de 2 anos de experiência no desenvolvimento de aplicações web e mobile, 
-                  Kenneson é especialista em tecnologias modernas como React, Node.js e arquiteturas em nuvem. 
-                  Formado em Gestão de TI. Ele combina conhecimento acadêmico com experiência prática de mercado.
+                Com mais de 2 anos de experiência no desenvolvimento de aplicações web, especialista em tecnologias modernas como React, Node.js e arquiteturas em nuvem. Formado em Gestão de TI, combino sólida formação acadêmica com experiência prática de mercado. Atualmente, trabalho em uma empresa multinacional de cybersegurança, atuando como desenvolvedor Full Stack no setor de inovação, utilizando tecnologias avançadas incorporando inteligência artificial em produtos de ponta.
                 </p>
                 
                 <div className="mb-6">
@@ -421,7 +419,7 @@ export default function Home() {
                 
                 <div className="flex gap-4">
                   <a 
-                    href="https://linkedin.com/in/professor" 
+                    href="https://www.linkedin.com/in/kenneson-anderson/" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 bg-[#0077B5] text-white py-2 px-4 rounded-lg hover:bg-[#005885] transition duration-300"
@@ -429,7 +427,7 @@ export default function Home() {
                     <FaLinkedin /> LinkedIn
                   </a>
                   <a 
-                    href="https://github.com/professor" 
+                    href="https://github.com/" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 bg-[#333] text-white py-2 px-4 rounded-lg hover:bg-[#111] transition duration-300"
