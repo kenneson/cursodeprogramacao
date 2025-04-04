@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { FaCode, FaLaptopCode, FaUsers, FaGraduationCap, FaBriefcase, FaCheckCircle, FaWhatsapp, FaLinkedin, FaGithub, FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs } from 'react-icons/fa';
+import { FaCode, FaLaptopCode, FaUsers, FaGraduationCap, FaBriefcase, FaCheckCircle, FaLinkedin, FaGithub, FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs } from 'react-icons/fa';
 import { SiTailwindcss, SiMysql, SiNextdotjs, SiTypescript, SiRedux, SiSass } from 'react-icons/si';
 
 import SubscriptionForm from './components/SubscriptionForm';
