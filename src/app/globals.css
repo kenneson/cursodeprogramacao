@@ -1,18 +1,18 @@
 @import "tailwindcss";
 
 :root {
-  --primary: #8257e5;
-  --primary-dark: #6833e4;
-  --secondary: #04d361; /* Green */
-  --accent: #fd951f; /* Orange */
+  --primary: #0066cc;
+  --primary-dark: #004c99;
+  --secondary: #00b894;
+  --accent: #00d2d3;
   --background: #121214;
   --foreground: #e1e1e6;
   --gray-light: #202024;
   --gray-medium: #8d8d99;
   --gray-dark: #c4c4cc;
-  --success: #04d361;
+  --success: #00b894;
   --error: #e83f5b;
-  --warning: #fd951f;
+  --warning: #ffd32a;
   --card-bg: #29292e;
   --shape: #202024;
   --text-title: #e1e1e6;
@@ -176,8 +176,8 @@ body {
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
-  pointer-events: none; /* Permite que os eventos de mouse passem através do pseudo-elemento */
-  z-index: -1; /* Garante que o pseudo-elemento fique atrás do conteúdo */
+  pointer-events: none;
+  z-index: -1;
 }
 
 /* Mobile optimizations */

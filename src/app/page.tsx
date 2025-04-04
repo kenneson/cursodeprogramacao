@@ -536,7 +536,7 @@ export default function Home() {
                       </li>
                     </ul>
                   </div>
-                  <a href="#inscricao" className="block text-center bg-gradient-to-r from-primary to-secondary text-white font-bold py-3 px-6 rounded-lg hover:opacity-90 transition duration-300">
+                  <a href="#inscricao" className="block btn-primary text-center text-white font-bold py-3 px-6 rounded-lg hover:opacity-90 transition duration-300">
                         Garanta sua vaga
                   </a>
                 </div>
