@@ -26,17 +26,24 @@
   --font-mono: var(--font-roboto-mono);
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
   :root {
-    --background: #29292e;
-    --foreground: #121214;
-    --gray-light: #e1e1e6;
+    --primary: #0066cc;
+    --primary-dark: #004c99;
+    --secondary: #00b894;
+    --accent: #00d2d3;
+    --background: #121214;
+    --foreground: #e1e1e6;
+    --gray-light: #202024;
     --gray-medium: #8d8d99;
-    --gray-dark: #29292e;
-    --card-bg: #ffffff;
-    --shape: #ffffff;
-    --text-title: #3d3d4d;
-    --text-base: #6c6c80;
+    --gray-dark: #c4c4cc;
+    --success: #00b894;
+    --error: #e83f5b;
+    --warning: #ffd32a;
+    --card-bg: #29292e;
+    --shape: #202024;
+    --text-title: #e1e1e6;
+    --text-base: #a8a8b3;
   }
 }
 
