@@ -2,8 +2,8 @@
 
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { FaCode, FaLaptopCode, FaUsers, FaGraduationCap, FaBriefcase, FaCheckCircle, FaLinkedin, FaGithub, FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs } from 'react-icons/fa';
-import { SiTailwindcss, SiMysql, SiNextdotjs, SiTypescript, SiRedux, SiSass, SiSupabase, SiPostgresql, SiPrisma } from 'react-icons/si';
+import { FaCode, FaLaptopCode, FaUsers, FaGraduationCap, FaBriefcase, FaCheckCircle, FaLinkedin, FaGithub, FaHtml5, FaNodeJs } from 'react-icons/fa';
+import { SiTailwindcss, SiTypescript, SiSupabase, SiPostgresql, SiPrisma } from 'react-icons/si';
 import { TbBrandNextjs } from 'react-icons/tb';
 import { DiJavascript } from 'react-icons/di';
 
