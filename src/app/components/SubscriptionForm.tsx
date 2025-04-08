@@ -92,7 +92,7 @@ export default function SubscriptionForm() {
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-primary mt-1">✓</span>
-                <span>E-book gratuito "Primeiros Passos na Programação"</span>
+                <span>E-book gratuito &quot;Primeiros Passos na Programação&quot;</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-primary mt-1">✓</span>

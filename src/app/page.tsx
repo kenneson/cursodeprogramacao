@@ -8,7 +8,6 @@ import { TbBrandNextjs } from 'react-icons/tb';
 import { DiJavascript } from 'react-icons/di';
 
 import SubscriptionForm from './components/SubscriptionForm';
-import Testimonials from './components/Testimonials';
 import GuaranteeAndUrgency from './components/GuaranteeAndUrgency';
 
 export default function Home() {

@@ -46,7 +46,7 @@ const Testimonial = ({ name, role, image, text, rating }: TestimonialProps) => {
       </div>
       <div className="flex-grow">
         <FaQuoteLeft className="text-primary opacity-20 text-4xl mb-2" />
-        <p className="italic text-gray-dark">"{text}"</p>
+        <p className="italic text-gray-dark">&quot;{text}&quot;</p>
       </div>
     </motion.div>
   );
