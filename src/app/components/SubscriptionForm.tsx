@@ -81,8 +81,26 @@ export default function SubscriptionForm() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
           onSubmit={handleSubmit(onSubmit)}
-          className="card p-8"
+          className="card p-8 border-2 border-primary glow-effect"
         >
+          <div className="bg-primary/10 p-4 rounded-lg mb-6">
+            <h3 className="font-bold text-lg mb-2">Ao se inscrever você receberá:</h3>
+            <ul className="space-y-2">
+              <li className="flex items-start gap-2">
+                <span className="text-primary mt-1">✓</span>
+                <span>Desconto exclusivo de 30% na primeira turma</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-primary mt-1">✓</span>
+                <span>E-book gratuito "Primeiros Passos na Programação"</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-primary mt-1">✓</span>
+                <span>Acesso antecipado a materiais introdutórios</span>
+              </li>
+            </ul>
+          </div>
+          
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
             <div>
               <label htmlFor="name" className="block mb-2 font-medium">Nome Completo</label>
@@ -139,13 +157,21 @@ export default function SubscriptionForm() {
               {submitError}
             </div>
           )}
-          <button 
-            type="submit" 
-            className="w-full btn-primary py-3 flex items-center justify-center"
-            disabled={isSubmitting}
-          >
-            {isSubmitting ? 'Processando...' : 'Enviar Inscrição'}
-          </button>
+          <div className="mb-6 p-3 bg-warning/10 rounded-lg text-center border-l-4 border-warning">
+            <p className="font-bold">⏰ Não perca esta oportunidade!</p>
+            <p>Vagas limitadas com desconto. Garanta a sua!</p>
+          </div>
+          <div className="flex justify-center">
+            <button 
+              type="submit" 
+              className="w-full md:w-2/3 lg:w-1/2 btn-primary py-3 flex items-center justify-center text-lg font-bold relative overflow-hidden group mx-auto"
+              disabled={isSubmitting}
+            >
+              <span className="relative z-10">{isSubmitting ? 'Processando...' : 'GARANTIR MINHA VAGA AGORA'}</span>
+              <span className="absolute inset-0 bg-white/20 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300"></span>
+            </button>
+          </div>
+          <p className="text-center text-sm mt-4 text-gray-medium">Seus dados estão seguros e não serão compartilhados.</p>
         </motion.form>
       )}
     </div>

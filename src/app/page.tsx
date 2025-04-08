@@ -8,6 +8,8 @@ import { TbBrandNextjs } from 'react-icons/tb';
 import { DiJavascript } from 'react-icons/di';
 
 import SubscriptionForm from './components/SubscriptionForm';
+import Testimonials from './components/Testimonials';
+import GuaranteeAndUrgency from './components/GuaranteeAndUrgency';
 
 export default function Home() {
 
@@ -33,12 +35,17 @@ export default function Home() {
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-3 md:mb-4">
                 Aprenda <span className="gradient-text">Programação Web</span> em Santarém-PA
               </h1>
-              <p className="text-base sm:text-lg md:text-xl mb-6 md:mb-8">
+              <p className="text-base sm:text-lg md:text-xl mb-3 md:mb-4">
                 Curso híbrido com aulas presenciais e online. Desenvolva habilidades práticas para o mercado de trabalho.
               </p>
+              <div className="mb-6 md:mb-8 bg-primary/10 p-3 rounded-lg border-l-4 border-primary">
+                <p className="font-bold">🔥 Desconto especial para as primeiras inscrições!</p>
+                <p className="text-sm">Garanta sua vaga com condições exclusivas</p>
+              </div>
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center md:justify-start">
-                <a href="#inscricao" className="btn-primary text-center">
-                  Inscreva-se Agora
+                <a href="#inscricao" className="btn-primary text-center relative overflow-hidden group">
+                  <span className="relative z-10">Garanta Sua Vaga</span>
+                  <span className="absolute inset-0 bg-white/20 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300"></span>
                 </a>
                 <a href="#sobre" className="btn-secondary text-center">
                   Saiba Mais
@@ -80,7 +87,7 @@ export default function Home() {
               <div className="w-20 h-1 bg-primary mx-auto mb-6"></div>
               <p className="text-lg max-w-3xl mx-auto">
                 Um curso completo de programação web com foco em tecnologias modernas e demandadas pelo mercado. 
-                Aprenda de forma prática e construa projetos reais.
+                <span className="font-bold text-primary">Aprenda de forma prática e construa projetos reais para seu portfólio.</span>
               </p>
             </motion.div>
 
@@ -327,8 +334,8 @@ export default function Home() {
                 <h3 className="text-xl md:text-2xl font-bold mb-2 md:mb-3">Prof. Kenneson Anderson</h3>
                 <p className="text-base md:text-lg font-medium text-primary mb-3 md:mb-4">Desenvolvedor Full Stack & Instrutor</p>
                 
-                <p className="mb-4">
-                Com mais de 2 anos de experiência no desenvolvimento de aplicações web, especialista em tecnologias modernas como React, Node.js e arquiteturas em nuvem. Formado em Gestão de TI, combino sólida formação acadêmica com experiência prática de mercado. Atualmente, trabalho em uma empresa multinacional de cybersegurança, atuando como desenvolvedor Full Stack no setor de inovação, utilizando tecnologias avançadas incorporando inteligência artificial em produtos de ponta.
+                <p className="mb-4 text-justify">
+                Com mais de 2 anos de experiência no desenvolvimento de aplicações web, é especialista em tecnologias modernas como React, Node.js e arquiteturas em nuvem. Formado em Gestão de TI, combina sólida formação acadêmica com experiência prática no mercado. Atualmente, exerce a função de desenvolvedor Full Stack no setor de inovação de uma empresa multinacional de cybersegurança, utilizando tecnologias avançadas e incorporando inteligência artificial em produtos de ponta.
                 </p>
                 
                 <div className="mb-6">
@@ -384,6 +391,9 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Garantia e Urgência */}
+        <GuaranteeAndUrgency />
+        
         {/* Detalhes do Curso */}
         <section className="py-16 bg-gray-light relative overflow-hidden">
           <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-secondary"></div>
@@ -414,8 +424,8 @@ export default function Home() {
                       <h3 className="text-2xl font-bold mb-4">Investimento</h3>
                       <div className="mb-6">
                         <p className="text-lg mb-2">Valor promocional de lançamento:</p>
-                        <p className="text-4xl font-bold mb-2">R$ 500,00</p>
-                        <p className="text-sm">ou 6x de R$ 91,67 sem juros</p>
+                        <p className="text-4xl font-bold mb-2">R$ 257,00</p>
+                        <p className="text-sm">ou até 6x de R$ 48,89</p>
                       </div>
                       <div className="mb-6">
                         <p className="text-lg font-bold">O que está incluso:</p>
@@ -423,10 +433,6 @@ export default function Home() {
                           <li className="flex items-center gap-2">
                             <FaCheckCircle />
                             <span>Material didático completo</span>
-                          </li>
-                          <li className="flex items-center gap-2">
-                            <FaCheckCircle />
-                            <span>Acesso à plataforma online</span>
                           </li>
                           <li className="flex items-center gap-2">
                             <FaCheckCircle />
@@ -443,7 +449,7 @@ export default function Home() {
                         <ul className="space-y-2 mt-2">
                           <li className="flex items-center gap-2">
                             <FaCheckCircle />
-                            <span><span className="font-bold">Duração:</span> 6 meses</span>
+                            <span><span className="font-bold">Duração:</span> 1 mês e 1 semana</span>
                           </li>
                           <li className="flex items-center gap-2">
                             <FaCheckCircle />
@@ -451,7 +457,7 @@ export default function Home() {
                           </li>
                           <li className="flex items-center gap-2">
                             <FaCheckCircle />
-                            <span><span className="font-bold">Formato:</span> Aulas presenciais semanais + conteúdo online</span>
+                            <span><span className="font-bold">Formato:</span> Aulas semanais online + <br></br> encontros presenciais para desenvolvimento de projetos</span>
                           </li>
                           <li className="flex items-center gap-2">
                             <FaCheckCircle />
@@ -533,9 +539,15 @@ export default function Home() {
             >
               <h2 className="text-3xl md:text-4xl font-bold mb-4">Inscreva-se Agora</h2>
               <div className="w-20 h-1 bg-primary mx-auto mb-6"></div>
-              <p className="text-lg max-w-3xl mx-auto">
+              <p className="text-lg max-w-3xl mx-auto mb-2">
                 Preencha o formulário abaixo para garantir sua vaga ou solicitar mais informações sobre o curso.
               </p>
+              <p className="text-primary font-bold text-xl mb-4">Vagas com 30% de desconto!</p>
+              <div className="flex justify-center mb-6">
+                <div className="bg-warning/20 p-3 rounded-lg text-center inline-block">
+                <p className="text-warning font-bold">Oferta válida até: {new Date('2025-05-07').toLocaleDateString('pt-BR')}</p>
+                </div>
+              </div>
             </motion.div>
 
             <SubscriptionForm />
@@ -558,7 +570,7 @@ export default function Home() {
               <h3 className="text-xl font-bold mb-4 text-primary">Contato</h3>
               <p className="mb-3 flex items-center gap-2"><span className="text-primary">✉️</span> devkenneson@gmail.com</p>
               <p className="mb-3 flex items-center gap-2"><span className="text-primary">📱</span> WhatsApp: (93) 98811-1109</p>
-              <p className="flex items-center gap-2"><span className="text-primary">📸</span> Instagram: @cursoprogstm</p>
+              <p className="flex items-center gap-2"><span className="text-primary">📸</span> Instagram: @cursoprogramacaostm</p>
             </div>
             <div className="bg-card-bg p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold mb-4 text-primary">Links Rápidos</h3>
