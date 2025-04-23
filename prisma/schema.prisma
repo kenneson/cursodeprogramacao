@@ -8,12 +8,39 @@ datasource db {
 }
 
 model Waitlist {
-  id        String   @id @default(uuid())
+  id        String     @id @default(uuid())
   name      String
-  email     String   @unique
+  email     String     @unique
   phone     String
   message   String?
-  createdAt DateTime @default(now()) @map("created_at")
+  createdAt DateTime   @default(now()) @map("created_at")
+  sentEmails SentEmail[]
 
   @@map("waitlist")
+}
+
+model Registration {
+  id         String   @id @default(uuid())
+  name       String
+  email      String   @unique
+  phone      String
+  education  String
+  experience String
+  payment    String
+  referral   String
+  message    String?
+  createdAt  DateTime @default(now()) @map("created_at")
+
+  @@map("registration")
+}
+
+model SentEmail {
+  id        String   @id @default(uuid())
+  templateName String
+  sentAt     DateTime @default(now()) @map("sent_at")
+  waitlistId String
+  waitlist   Waitlist @relation(fields: [waitlistId], references: [id])
+
+  @@unique([waitlistId, templateName])
+  @@map("sent_emails")
 }
